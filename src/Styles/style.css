@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-light: #6dd5ed;
+    --primary-dark: #2193b0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(var(--primary-light), var(--primary-dark));
+}
+
+.btn {
+    background: #fff;
+    border: none;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4);
+}
+
+.loading,
+.error {
+    text-align: center;
+}
+
+.main__container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    text-decoration: underline;
+}
+
+.options__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.options__item {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.country__container {
+    max-width: 60rem;
+}
+
+.country__card {
+    margin: 0 auto;
+    max-width: 400px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+
+.country__card:hover {
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+.country__figure img {
+    width: 100%;
+    height: 20rem;
+}
+
+.country__figure figcaption {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.country__content p {
+    padding: 1rem 0;
+    border-bottom: 1px solid #dadada;
+}
+
+.country__language:not(:last-of-type)::after,
+.country__currency:not(:last-of-type)::after {
+    content: ", ";
+}
